@@ -1,23 +1,20 @@
-import logo from './logo.svg';
-import './App.css';
+import { useState } from "react";
+import "./App.css";
+import ResponsiveAppBar from "./components/Navbar";
+import LinearWithValueLabel from "./components/Progressbar";
+import QuestionButton from "./components/Button";
+import Fragebogen from "./components/Fragebogen";
 
 function App() {
+  const [progress, setProgress] = useState(1);
+  const [count, setCount] = useState(1);
+
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <ResponsiveAppBar />
+      <LinearWithValueLabel value={progress > 100 ? (100) : (progress)} />
+      <Fragebogen count={count - 1}/>
+      <QuestionButton changeProgress={progress_button => {setProgress(progress_button)}} changeCount={fragen_counter => {setCount(fragen_counter)}} neuer_counter={count}/>
     </div>
   );
 }
