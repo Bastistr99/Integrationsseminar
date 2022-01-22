@@ -35,9 +35,9 @@ export default function BasicRating({ count }) {
               <MenuItem value="">
                 <em>Keins</em>
               </MenuItem>
-              <MenuItem value={"Haushaltsgegenstand"}>Ten</MenuItem>
-              <MenuItem value={"Technik"}>Twenty</MenuItem>
-              <MenuItem value={"Medizinisches Gerät"}>Thirty</MenuItem>
+              <MenuItem value={"Haushaltsgegenstand"}>Haushaltsgegenstand</MenuItem>
+              <MenuItem value={"Technik"}>Technik</MenuItem>
+              <MenuItem value={"Medizinisches Gerät"}>Medizinisches Gerät</MenuItem>
             </Select>
             <FormHelperText>Notwenige Angabe</FormHelperText>
           </FormControl>
