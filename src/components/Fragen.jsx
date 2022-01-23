@@ -1,4 +1,4 @@
-import { List, ListItem, ListItemText } from "@mui/material";
+import { List, ListItem, ListItemText, Typography } from "@mui/material";
 import React from "react";
 
 const Fragen = ({ fragen_array, fragen_index }) => {
@@ -7,9 +7,11 @@ const Fragen = ({ fragen_array, fragen_index }) => {
       {fragen_array !== "null" ? (fragen_array.map((frage, index) => {
         if ((fragen_index === index)) {
           return (
-            <List key={index}>
-              <ListItem alignItems="flex-start">
-                <ListItemText primary={frage}/>
+            <List key={index} >
+              <ListItem alignItems="center">
+                <ListItemText>
+                  <Typography variant="h5">{frage}</Typography>
+                </ListItemText>
               </ListItem>
             </List>
           );
