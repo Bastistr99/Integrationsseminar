@@ -1,57 +1,112 @@
 import * as React from "react";
 import Box from "@mui/material/Box";
 import { TextField } from "@mui/material";
-import InputLabel from "@mui/material/InputLabel";
-import MenuItem from "@mui/material/MenuItem";
-import FormHelperText from "@mui/material/FormHelperText";
-import FormControl from "@mui/material/FormControl";
-import Select from "@mui/material/Select";
+import PropTypes from "prop-types";
+import Rating from "@mui/material/Rating";
+import SentimentVeryDissatisfiedIcon from "@mui/icons-material/SentimentVeryDissatisfied";
+import SentimentDissatisfiedIcon from "@mui/icons-material/SentimentDissatisfied";
+import SentimentSatisfiedIcon from "@mui/icons-material/SentimentSatisfied";
+import SentimentSatisfiedAltIcon from "@mui/icons-material/SentimentSatisfiedAltOutlined";
+import SentimentVerySatisfiedIcon from "@mui/icons-material/SentimentVerySatisfied";
 
-export default function BasicRating({ count, getResult }) {
-  const [art, setArt] = React.useState("");
-  const [text, setText] = React.useState("");
+const customIcons = {
+  1: {
+    icon: <SentimentVeryDissatisfiedIcon fontSize="large"/>,
+    label: "Very Dissatisfied",
+  },
+  2: {
+    icon: <SentimentDissatisfiedIcon fontSize="large"/>,
+    label: "Dissatisfied",
+  },
+  3: {
+    icon: <SentimentSatisfiedIcon fontSize="large"/>,
+    label: "Neutral",
+  },
+  4: {
+    icon: <SentimentSatisfiedAltIcon fontSize="large"/>,
+    label: "Satisfied",
+  },
+  5: {
+    icon: <SentimentVerySatisfiedIcon fontSize="large"/>,
+    label: "Very Satisfied",
+  },
+};
 
-  const handleChange = (event) => {
-    setArt(event.target.value);
-    setText(event.target.value);
+function IconContainer(props) {
+  const { value, ...other } = props;
+  return <span {...other}>{customIcons[value].icon}</span>;
+}
+
+IconContainer.propTypes = {
+  value: PropTypes.number.isRequired,
+};
+
+export default function BasicRating({ count, getResult, result }) {
+
+  const handleChangeInput = (index, event) => {
+    const values = [...result];
+    values[index][event.target.name] = event.target.value;
+    getResult(values);
+    console.log(result);
   };
 
-const inputRef = React.createRef()
+  const handleAddReview = () => {
+    getResult([
+      ...result,
+      {
+        antwort: "",
+        sternwert: 0,
+      },
+    ]);
+  };
 
-  React.useEffect(()=> {
-    const inputText = inputRef.current.value
-    console.log(inputText)
-     getResult(inputText);
-   },[text])
+  React.useEffect(() => {
+    handleAddReview();
+  }, [count]);
 
   return (
     <div>
-      {count < 2 ? (
-        <Box sx={{ "& > legend": { mt: 2 }, mb: 5 }} component="form" sx={{
-            '& > :not(style)': { m: 1, width: '25ch' },
-          }} noValidate autoComplete="off"> 
-          <TextField id="standard_basic" variant="standard" ref={inputRef} onChange={handleChange}/>
+      {count < 3 ? (
+        <Box sx={{ mt: 5, mb: 3 }} noValidate autoComplete="off">
+          <form>
+            {result.map((inputField, index) => {
+              if (index === count) {
+                return (
+                  <div key={index}>
+                    <TextField
+                      type="text"
+                      value={inputField.antwort}
+                      name="antwort"
+                      label="Antwort"
+                      onChange={(event) => handleChangeInput(index, event)}
+                    />
+                  </div>
+                );
+              }
+            })}
+          </form>
         </Box>
       ) : (
-        <Box sx={{ "& > legend": { mt: 2 }, mb: 5 }}>
-          <FormControl required sx={{ m: 1, minWidth: 120 }}>
-            <InputLabel id="demo-simple-select-required-label">Art</InputLabel>
-            <Select
-              labelId="demo-simple-select-required-label"
-              value={art}
-              label="Art *"
-              onChange={handleChange}
-            >
-              <MenuItem value="">
-                <em>Keins</em>
-              </MenuItem>
-              <MenuItem value={"Haushaltsgegenstand"}>Haushaltsgegenstand</MenuItem>
-              <MenuItem value={"Technik"}>Technik</MenuItem>
-              <MenuItem value={"Medizinisches Gerät"}>Medizinisches Gerät</MenuItem>
-            </Select>
-            <FormHelperText>Notwenige Angabe</FormHelperText>
-          </FormControl>
-        </Box>
+        <div>
+          <Box sx={{ "& > legend": { mt: 2 }, mb: 5 }}>
+            {result.map((inputField, index) => {
+              if (index === count) {
+                return (
+                  <div key={index}>
+                  <Rating
+                    name="sternwert"
+                    defaultValue={2}
+                    IconContainerComponent={IconContainer}
+                    highlightSelectedOnly
+                    value={inputField.sternwert}
+                    onChange={(event) => handleChangeInput(index, event)}
+                  />
+                  </div>
+                );
+              }
+            })}
+          </Box>
+        </div>
       )}
     </div>
   );

@@ -9,16 +9,17 @@ import Fragebogen from "./components/Fragebogen";
 function App() {
   const [progress, setProgress] = useState(1);
   const [count, setCount] = useState(1);
-  const [results, setResult] = useState("")
+  const [inputFields, setInputFields] = useState([
+    { antwort: "", sternwert: 0 },
+  ]);
 
-  console.log(results)
 
   return (
     <div className="App">
       <ResponsiveAppBar />
       <LinearWithValueLabel value={progress > 100 ? (100) : (progress)} />
-      <Fragebogen count={count - 1} getResults={result => {setResult(result)}}/>
-      <QuestionButton changeProgress={progress_button => {setProgress(progress_button)}} changeCount={fragen_counter => {setCount(fragen_counter)}} neuer_counter={count}/>
+      <Fragebogen count={count - 1} getResults={result => {setInputFields(result)}} results={inputFields}/>
+      <QuestionButton changeProgress={progress_button => {setProgress(progress_button)}} changeCount={fragen_counter => {setCount(fragen_counter)}} neuer_counter={count} reviews={inputFields}/>
     </div>
   );
 }

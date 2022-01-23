@@ -1,16 +1,17 @@
 import { Button } from "@mui/material";
 import React from "react";
 
-const JsonObjekt = ({name, preis, art }) => {
+const JsonObjekt = ({ review}) => {
   const get_data = () => {
+      console.log(review)
     const requestOptions = {
       method: "POST",
       headers: { "Content-Type": "application/json" },
       body: JSON.stringify({
         product: {
-          name: name,
-          preis: preis,
-          art: art,
+          name: review[0].antwort,
+          preis: review[1].antwort,
+          art: review[2].antwort,
         },
         personalbezogene_aspekte: {
           nutzer: {

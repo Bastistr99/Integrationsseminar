@@ -7,7 +7,7 @@ const Fragen = ({ fragen_array, fragen_index }) => {
       {fragen_array !== "null" ? (fragen_array.map((frage, index) => {
         if ((fragen_index === index)) {
           return (
-            <List>
+            <List key={index}>
               <ListItem alignItems="flex-start">
                 <ListItemText primary={frage}/>
               </ListItem>

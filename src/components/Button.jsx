@@ -3,7 +3,7 @@ import SimpleBackdrop from './Backdrop';
 import { Button } from '@mui/material';
 
 
-const QuestionButton = ({changeProgress, changeCount, neuer_counter}) => {
+const QuestionButton = ({changeProgress, changeCount, neuer_counter, reviews}) => {
     return (
         <div>
             {neuer_counter <= 17 ? (
@@ -17,7 +17,7 @@ const QuestionButton = ({changeProgress, changeCount, neuer_counter}) => {
             Nächste Frage
           </Button>
         ) : (
-          <SimpleBackdrop name={"Staubsauger"} preis={560} art={"Haushaltsgerät"}>Zurück zur Website</SimpleBackdrop>
+          <SimpleBackdrop review={reviews}>Zurück zur Website</SimpleBackdrop>
         )}
         </div>
     );
