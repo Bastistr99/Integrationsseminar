@@ -12,6 +12,7 @@ import Button from '@mui/material/Button';
 import Tooltip from '@mui/material/Tooltip';
 import MenuItem from '@mui/material/MenuItem';
 import ContactPhoneIcon from '@mui/icons-material/ContactPhone';
+import bild from "./woman-1353825_1280.png"
 
 const pages = ['Fragebogen', 'Produktvergleich', 'Rangliste', 'Kontakt'];
 const settings = ['Meine Bewertungen', 'Einstellungen', 'Profil', 'Logout'];
@@ -107,7 +108,7 @@ const ResponsiveAppBar = () => {
           <Box sx={{ flexGrow: 0 }}>
             <Tooltip title="Open settings">
               <IconButton onClick={handleOpenUserMenu} sx={{ p: 0 }}>
-                <Avatar alt="Remy Sharp" src="/static/images/avatar/2.jpg" />
+                <Avatar alt="Remy Sharp" src={bild} />
               </IconButton>
             </Tooltip>
             <Menu

@@ -7,12 +7,22 @@ import FormHelperText from "@mui/material/FormHelperText";
 import FormControl from "@mui/material/FormControl";
 import Select from "@mui/material/Select";
 
-export default function BasicRating({ count }) {
+export default function BasicRating({ count, getResult }) {
   const [art, setArt] = React.useState("");
+  const [text, setText] = React.useState("");
 
   const handleChange = (event) => {
     setArt(event.target.value);
+    setText(event.target.value);
   };
+
+const inputRef = React.createRef()
+
+  React.useEffect(()=> {
+    const inputText = inputRef.current.value
+    console.log(inputText)
+     getResult(inputText);
+   },[text])
 
   return (
     <div>
@@ -20,7 +30,7 @@ export default function BasicRating({ count }) {
         <Box sx={{ "& > legend": { mt: 2 }, mb: 5 }} component="form" sx={{
             '& > :not(style)': { m: 1, width: '25ch' },
           }} noValidate autoComplete="off"> 
-          <TextField id="standard_basic" label="Gerätename" variant="standard" />
+          <TextField id="standard_basic" variant="standard" ref={inputRef} onChange={handleChange}/>
         </Box>
       ) : (
         <Box sx={{ "& > legend": { mt: 2 }, mb: 5 }}>

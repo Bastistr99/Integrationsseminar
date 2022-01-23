@@ -2,7 +2,7 @@ import * as React from "react";
 import Box from "@mui/material/Box";
 import Rating from "@mui/material/Rating";
 
-export default function Star_Rating() {
+export default function StarRating() {
   const [value, setValue] = React.useState(0);
 
   return (

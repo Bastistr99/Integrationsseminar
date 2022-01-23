@@ -17,7 +17,7 @@ const QuestionButton = ({changeProgress, changeCount, neuer_counter}) => {
             Nächste Frage
           </Button>
         ) : (
-          <SimpleBackdrop>Zurück zur Website</SimpleBackdrop>
+          <SimpleBackdrop name={"Staubsauger"} preis={560} art={"Haushaltsgerät"}>Zurück zur Website</SimpleBackdrop>
         )}
         </div>
     );

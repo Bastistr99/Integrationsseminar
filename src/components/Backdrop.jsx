@@ -1,10 +1,10 @@
 import * as React from 'react';
 import Backdrop from '@mui/material/Backdrop';
 // import CircularProgress from '@mui/material/CircularProgress';
-import Button from '@mui/material/Button';
 import { Typography } from '@mui/material';
+import JsonObjekt from './Json_Objekt';
 
-export default function SimpleBackdrop() {
+export default function SimpleBackdrop({name, preis, art}) {
   const [open, setOpen] = React.useState(true);
   const handleClose = () => {
     setOpen(false);
@@ -21,7 +21,7 @@ export default function SimpleBackdrop() {
             Vielen Dank für ihre Antworten!
         </Typography>
         <br />
-        <Button variant='outlined' color='inherit'>Zurück zur Startseite</Button>
+        <JsonObjekt name={name} preis={preis} art={art} />
         </div>
       </Backdrop>
     </div>

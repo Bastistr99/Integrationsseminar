@@ -1,5 +1,13 @@
 import express from "express";
 import cors from "cors";
+import mongoose from 'mongoose';
+import 'dotenv/config'
+
+
+const uri = `mongodb+srv://intseminar_admin:${process.env.PASSWORD}@integrationsseminar.btrdy.mongodb.net/Integrationsseminar?retryWrites=true&w=majority`;
+import Review from "./models/review.js";
+
+
 const app = express();
 
 app.use(express.json());
@@ -7,11 +15,17 @@ app.use(cors());
 
 const body = [];
 
+
+mongoose.connect(uri).then(res => app.listen(3001, () => {
+  console.log("Listening on Port 3001");
+})).catch((err) => console.log(err))
+
 app.get("/", (req, res) => {
   res.send("Hello World!");
 });
 app.post("/send_review", (req, res) => {
-  const bodys = {
+  console.log(req.body)
+  const review = new Review({
     id: body.length + 1,
     product: {
       name: req.body.product.name,
@@ -75,13 +89,15 @@ app.post("/send_review", (req, res) => {
       laufende_kosten: req.body.ökonomische_aspekte.laufende_kosten,
       wartungsaufwand: req.body.ökonomische_aspekte.wartungsaufwand
     }
-  };
+  });
 
-  body.push(bodys);
-  res.send(bodys);
-  console.log(body);
+  review.save().then((result) => {
+    res.send(result)
+    console.log(result.body)
+  }).catch((err) => {
+    console.log(err)
+  })
+  body.push(review);
 });
 
-app.listen(3001, () => {
-  console.log("Listening on Port 3001");
-});
+

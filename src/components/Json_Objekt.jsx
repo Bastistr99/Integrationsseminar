@@ -1,16 +1,16 @@
 import { Button } from "@mui/material";
 import React from "react";
 
-const JsonObjekt = () => {
+const JsonObjekt = ({name, preis, art }) => {
   const get_data = () => {
     const requestOptions = {
       method: "POST",
       headers: { "Content-Type": "application/json" },
       body: JSON.stringify({
         product: {
-          name: "Staubsauger",
-          preis: "500",
-          art: "Haushaltsprodukt"
+          name: name,
+          preis: preis,
+          art: art,
         },
         personalbezogene_aspekte: {
           nutzer: {
@@ -24,16 +24,16 @@ const JsonObjekt = () => {
             psychische_sicherheit: 3,
             pyschische_entlastung: 1,
             selbststaendigkeit: 2,
-            zumutbarkeit: 3
+            zumutbarkeit: 3,
           },
           angehoerige: {
             entlastung_angehoerige: 4,
-            ermoeglichung_fuehrsorge: 2
+            ermoeglichung_fuehrsorge: 2,
           },
           pflegepersonal: {
             akzeptanz: 2,
-            entlastung: 4
-          }
+            entlastung: 4,
+          },
         },
         technologische_aspekte: {
           ausfall: 2,
@@ -50,7 +50,7 @@ const JsonObjekt = () => {
           robustheit: 3,
           schnelle_verfuegbarkeit: 1,
           service: 2,
-          wohnraum: 2
+          wohnraum: 2,
         },
         ökonomische_aspekte: {
           anschaffungskosten: 2,
@@ -59,10 +59,9 @@ const JsonObjekt = () => {
           betriebskosten: 3,
           kostenuebernahme: 4,
           laufende_kosten: 1,
-          wartungsaufwand: 4
-        }
-        }
-      )
+          wartungsaufwand: 4,
+        },
+      }),
     };
 
     fetch("http://localhost:3001/send_review", requestOptions)
@@ -70,7 +69,7 @@ const JsonObjekt = () => {
       .then((data) => console.log(data));
   };
 
-  return <Button onClick={get_data}>Give me Data</Button>;
+  return <Button variant='outlined' color='inherit' onClick={get_data}>Zurück zur Startseite</Button>;
 };
 
 export default JsonObjekt;
