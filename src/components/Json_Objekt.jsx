@@ -1,9 +1,9 @@
 import { Button } from "@mui/material";
 import React from "react";
 
-const JsonObjekt = ({ review}) => {
+const JsonObjekt = ({review, toggleHomescreen}) => {
   const get_data = () => {
-      console.log(review)
+      toggleHomescreen(true)
     const requestOptions = {
       method: "POST",
       headers: { "Content-Type": "application/json" },

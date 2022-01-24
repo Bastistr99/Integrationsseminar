@@ -4,7 +4,7 @@ import Backdrop from '@mui/material/Backdrop';
 import { Typography } from '@mui/material';
 import JsonObjekt from './Json_Objekt';
 
-export default function SimpleBackdrop({review}) {
+export default function SimpleBackdrop({review, toggleHomescreen}) {
   const [open, setOpen] = React.useState(true);
   const handleClose = () => {
     setOpen(false);
@@ -21,7 +21,7 @@ export default function SimpleBackdrop({review}) {
             Vielen Dank für ihre Antworten!
         </Typography>
         <br />
-        <JsonObjekt review={review} />
+        <JsonObjekt review={review} toggleHomescreen={(res => toggleHomescreen(res))}/>
         </div>
       </Backdrop>
     </div>
