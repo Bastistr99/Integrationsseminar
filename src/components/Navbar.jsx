@@ -13,6 +13,7 @@ import Tooltip from '@mui/material/Tooltip';
 import MenuItem from '@mui/material/MenuItem';
 import ContactPhoneIcon from '@mui/icons-material/ContactPhone';
 import bild from "./woman-1353825_1280.png"
+import logo from "./earth-5766860_960_720.webp"
 
 const pages = ['Fragebogen', 'Produktvergleich', 'Rangliste', 'Kontakt'];
 const settings = ['Meine Bewertungen', 'Einstellungen', 'Profil', 'Logout'];
@@ -46,7 +47,7 @@ const ResponsiveAppBar = () => {
             component="div"
             sx={{ mr: 4, ml: 0,  display: { xs: 'none', md: 'flex' } }}
           >
-            <ContactPhoneIcon fontSize='large'/>
+            <Avatar alt='logo' src={logo}/>
           </Typography>
 
           <Box sx={{ flexGrow: 1, color: "inherit", display: { xs: 'flex', md: 'none' } }}>
@@ -91,7 +92,7 @@ const ResponsiveAppBar = () => {
             component="div"
             sx={{ flexGrow: 1, display: { xs: 'flex', md: 'none' } }}
           >
-            <ContactPhoneIcon fontSize='large'/>
+            <Avatar alt='logo' src={logo} />
           </Typography>
           <Box sx={{ flexGrow: 1, display: { xs: 'none', md: 'flex' } }}>
             {pages.map((page) => (
