@@ -15,7 +15,7 @@ const JsonObjekt = ({review, toggleHomescreen}) => {
         },
         personalbezogene_aspekte: {
           nutzer: {
-            akzeptanz: 0,
+            akzeptanz: review[3].antwort,
             autonomie: 2,
             gefahr: 3,
             gesellschaftlich: 4,

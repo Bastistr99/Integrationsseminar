@@ -14,7 +14,7 @@
                 },
                 "preis": {
                     "type": "number"
-                }, 
+                },
                 "art": {
                     "type": "array",
                     "description": "Um welche Art von Produkt handelt es sich"
@@ -101,7 +101,6 @@
                         }
                     },
                     "description": "Fragen an Pfelgepersonal und andere"
-                    
                 }
             }
         },
@@ -117,27 +116,27 @@
                     "type": "number",
                     "description": "Robustheit (Stabilität, Zuverlässigkeit, Langlebigkeit"
                 },
-                "wohnraum":{
+                "wohnraum": {
                     "type": "number",
                     "description": "Kompatibilität mit bestehendem Wohnraum (keine bauliche Anpassung erforderlich z.B. zusätzliche Steckdose)"
                 },
-                "infrastruktur":{
+                "infrastruktur": {
                     "type": "number",
                     "description": "Keine zusätzliche IT-Infrastruktur notwendig (Wlan)"
                 },
-                "hardware_software":{
+                "hardware_software": {
                     "type": "number",
                     "description": "Kompatibilität Hard- und Software (Insbesondere ist dies zu beachten, wenn Standard- oder Fremdsoftware auf den Geräten zum Einsatz kommen (Produktzyklen,Versionswechsel, Softwareanpassungen))"
                 },
-                "service":{
+                "service": {
                     "type": "number",
                     "description": "Ausreichender Service und Support (insbesondere kombinierte Systeme, Verantwortlichkeit) Leistungsumfang (24/7 oder 8-17h) Online support möglich?"
                 },
-                "ausfall":{
+                "ausfall": {
                     "type": "number",
                     "description": "Geringe Gefahr für den Nutzer bei Ausfall der Technologie"
                 },
-                "einrichtung":{
+                "einrichtung": {
                     "type": "number",
                     "description": "Einfache Einrichtung der Technologie "
                 },
