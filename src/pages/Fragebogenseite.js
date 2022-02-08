@@ -1,14 +1,14 @@
 import { useState } from "react";
 import "./App.css";
-import ResponsiveAppBar from "./components/Navbar";
-import LinearWithValueLabel from "./components/Progressbar";
-import QuestionButton from "./components/Button";
-import Fragebogen from "./components/Fragebogen";
-import ExampleChart from "./components/Chart";
+import ResponsiveAppBar from "../components/Navbar";
+import LinearWithValueLabel from "../components/Progressbar";
+import QuestionButton from "../components/Button";
+import Fragebogen from "../components/Fragebogen";
+import ExampleChart from "../components/Chart";
 
 
 
-function App() {
+function Fragebogenseite() {
   const [progress, setProgress] = useState(1);
   const [toggleFragen, setToggleFragen] = useState(false);
   const [count, setCount] = useState(1);
@@ -52,4 +52,4 @@ function App() {
   );
 }
 
-export default App;
+export default Fragebogenseite;
