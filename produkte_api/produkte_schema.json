@@ -1,0 +1,26 @@
+{
+    "$schema": "http://json-schema.org/draft-07/schema",
+    "type": "object",
+    "required": ["id", "name"],
+    "properties": {
+        "$schema": {},
+        "id": {
+            "type": "integer",
+            "description": "eindeutige ID, die zur Identifzierung dient"
+        },
+        "name": {
+            "type": "string",
+            "description": "Name des Produkts",
+            "maxLength": 200
+        },
+        "kategorie": {
+            "type": "string",
+            "description": "Kategorie, zu der das Produkt gehört"
+        },
+        "uvp": {
+            "type": "number",
+            "description": "Unverbindliche Preisempfehlung, mit der das Produkt ausgeschrieben ist"
+        }
+    },
+    "additionalProperties": false
+}
