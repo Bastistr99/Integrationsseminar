@@ -18,6 +18,7 @@ import logo from "./earth-5766860_960_720.webp"
 const pages = ['Fragebogen', 'Produktvergleich', 'Rangliste', 'Kontakt'];
 const settings = ['Meine Bewertungen', 'Einstellungen', 'Profil', 'Logout'];
 
+
 const ResponsiveAppBar = () => {
   const [anchorElNav, setAnchorElNav] = React.useState(null);
   const [anchorElUser, setAnchorElUser] = React.useState(null);
@@ -140,4 +141,5 @@ const ResponsiveAppBar = () => {
     </AppBar>
   );
 };
+
 export default ResponsiveAppBar;
