@@ -15,7 +15,7 @@ import ContactPhoneIcon from '@mui/icons-material/ContactPhone';
 import bild from "./woman-1353825_1280.png"
 import logo from "./earth-5766860_960_720.webp"
 
-const pages = ['Fragebogen', 'Produktvergleich', 'Produktbewertungen', 'Kontakt'];
+const pages = ['Home','Fragebogen', 'Produktvergleich', 'Produktbewertungen', 'Kontakt'];
 const settings = ['Meine Bewertungen', 'Einstellungen', 'Profil', 'Logout'];
 
 
@@ -101,6 +101,7 @@ const ResponsiveAppBar = () => {
                 key={page}
                 onClick={handleCloseNavMenu}
                 sx={{ my: 2, color: 'white', display: 'block' }}
+                href={page}
               >
                 {page}
               </Button>

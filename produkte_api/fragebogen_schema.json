@@ -1,0 +1,108 @@
+{
+    "$schema": "http://json-schema.org/draft-07/schema",
+    "type": "object",
+    "required": ["nutzer", "personenbezogene_aspekte", "technologische_aspekte", "ökonomische_aspekte", "empfehlung"],
+    "properties": {
+        "nutzer": {
+            "type": "object",
+            "properties": {
+                "alter": {
+                    "type": "integer",
+                    "description": "Alter des Users"
+                },
+                "nutzung": {
+                    "type": "integer",
+                    "description": "Wie stark hat sich der Nutzer in seinem Job/Freizeit bereits mit Technologien auseinander gesetzt"
+                },
+                "interesse": {
+                    "type": "integer",
+                    "description": "Wie hoch ist das Interesse für neue Technologien?"
+                },
+                "geschlecht": {
+                    "type": "integer",
+                    "description": "Mann, Frau oder andere?"
+                }
+            }
+        },
+        "personenbezogene_aspekte": {
+            "type": "object",
+            "properties": {
+                "selbstständigkeit": {
+                    "type": "integer"
+                },
+                "sicherheit": {
+                    "type": "integer"
+                },
+                "gesellschaftlicheTeilnahme": {
+                    "type": "integer"
+                },
+                "akzeptanz": {
+                    "type": "integer"
+                },
+                "körperlicheEntlastung": {
+                    "type": "integer"
+                },
+                "psychischeEntlastung": {
+                    "type": "integer"
+                },
+                "zeitlichefinanzielleEntlastung": {
+                    "type": "integer"
+                },
+                "fürsorgeEntlastung": {
+                    "type": "integer"
+                }
+            }
+        },
+        "technologische_aspekte": {
+            "type": "object",
+            "properties": {
+                "robustheit": {
+                    "type": "integer"
+                },
+                "kompartibel": {
+                    "type": "integer"
+                },
+                "support": {
+                    "type": "integer"
+                },
+                "ausfallsicher": {
+                    "type": "integer"
+                },
+                "einzurichten": {
+                    "type": "integer"
+                },
+                "intuitiv": {
+                    "type": "integer"
+                },
+                "datentransparenz": {
+                    "type": "integer"
+                },
+                "effektiv": {
+                    "type": "integer"
+                }
+            }
+        },
+        "ökonomische_aspekte": {
+            "type": "object",
+            "properties": {
+                "anschaffungskosten": {
+                    "type": "integer"
+                },
+                "serviceKosten": {
+                    "type": "integer"
+                },
+                "laufendeKosten": {
+                    "type": "integer"
+                },
+                "betreuungsaufwand": {
+                    "type": "integer"
+                }
+            }
+        },
+        "empfehlung": {
+            "type": "integer",
+            "description": "Würden sie das Gerät empfehlen?"
+        }
+    },
+    "additionalProperties": false
+}

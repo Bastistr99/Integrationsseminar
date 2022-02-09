@@ -10,7 +10,7 @@ const Fragen = ({ fragen_array, fragen_index }) => {
             <List key={index} >
               <ListItem alignItems="center">
                 <ListItemText>
-                  <Typography variant="h5">{frage}</Typography>
+                  <Typography variant="h4" >{frage}</Typography>
                 </ListItemText>
               </ListItem>
             </List>

@@ -11,6 +11,7 @@ export default function App() {
     <BrowserRouter>
       <Routes>
         <Route path="/" element={<Home />} />
+        <Route path='/home' element={<Home />} />
         <Route path="/fragebogen" element={<Fragebogenseite />} />
         <Route path="/produktbewertungen" element={<Produktbewertungen />} />
       </Routes>

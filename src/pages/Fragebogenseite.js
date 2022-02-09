@@ -16,9 +16,6 @@ function Fragebogenseite() {
     { antwort: "", sternwert: 0 },
   ]);
 
-  
-// states, hooks, props 
-
   return (
     <div className="App">
       <ResponsiveAppBar />
