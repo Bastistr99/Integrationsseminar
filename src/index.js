@@ -4,6 +4,7 @@ import { BrowserRouter, Routes, Route } from "react-router-dom";
 import './index.css';
 import Home from './pages/Home';
 import Fragebogenseite from './pages/Fragebogenseite';
+import Produktvergleich from './pages/produktvergleich';
 import Produktbewertungen from './pages/Produktbewertungen';
 
 export default function App() {
@@ -12,6 +13,7 @@ export default function App() {
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/fragebogen" element={<Fragebogenseite />} />
+        <Route path="/produktvergleich" element={<Produktvergleich />} />
         <Route path="/produktbewertungen" element={<Produktbewertungen />} />
       </Routes>
     </BrowserRouter>
