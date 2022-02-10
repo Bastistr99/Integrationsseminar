@@ -1,5 +1,6 @@
 import "./App.css";
 import ResponsiveAppBar from "../components/Navbar";
+import Auswahl from "../components/Auswahl";
 
 
 function Produktbewertungen() {
@@ -8,7 +9,7 @@ function Produktbewertungen() {
     <div className="App">
       <ResponsiveAppBar />
 
-      <h1> Diese Seite befindet sich im Aufbau </h1>
+      <Auswahl/>
     </div>
   );
 }
