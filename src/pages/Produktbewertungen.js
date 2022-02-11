@@ -1,5 +1,8 @@
 import "./App.css";
 import ResponsiveAppBar from "../components/Navbar";
+import Auswahl from "../components/Auswahl";
+import DataGridProdukte from "../components/DataGridProdukte";
+
 
 
 function Produktbewertungen() {
@@ -8,7 +11,9 @@ function Produktbewertungen() {
     <div className="App">
       <ResponsiveAppBar />
 
-      <h1> Diese Seite befindet sich im Aufbau </h1>
+      <Auswahl/>
+
+      <DataGridProdukte />
     </div>
   );
 }
