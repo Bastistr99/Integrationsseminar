@@ -9,7 +9,6 @@ function Produktbewertungen() {
 
   return (
     <div className="App">
-      <ResponsiveAppBar />
 
       <Auswahl/>
 
