@@ -36,6 +36,9 @@
                 "gesellschaftlicheTeilnahme": {
                     "type": "integer"
                 },
+                "medikamentenKonsum": {
+                    "type": "integer"
+                },
                 "akzeptanz": {
                     "type": "integer"
                 },

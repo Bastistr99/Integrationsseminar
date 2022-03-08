@@ -5,6 +5,7 @@ import LinearWithValueLabel from "../components/Progressbar";
 import QuestionButton from "../components/Button";
 import Fragebogen from "../components/Fragebogen";
 import ExampleChart from "../components/Chart";
+import Produktauswahl from "../components/Produktauswahl";
 
 
 
@@ -18,7 +19,6 @@ function Fragebogenseite() {
 
   return (
     <div className="App">
-      <ResponsiveAppBar />
       {toggleFragen ? (
         <div style={{width: "90%", height: "90%", margin: "auto", marginTop: "50px"}}>
             <ExampleChart />
@@ -26,7 +26,8 @@ function Fragebogenseite() {
       ) : (
         <div>
           <LinearWithValueLabel value={progress > 100 ? 100 : progress} />
-          <Fragebogen
+          <Produktauswahl /> 
+          {/* <Fragebogen
             count={count - 1}
             getResults={(result) => {
               setInputFields(result);
@@ -45,7 +46,7 @@ function Fragebogenseite() {
             toggleHomescreen={(res) => {
               setToggleFragen(res);
             }}
-          />
+          /> */}
         </div>
       )}
     </div>

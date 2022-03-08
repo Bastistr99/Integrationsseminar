@@ -6,8 +6,6 @@ function Produktbewertungen() {
 
   return (
     <div className="App">
-      <ResponsiveAppBar />
-
       <h1> Diese Seite befindet sich im Aufbau </h1>
     </div>
   );

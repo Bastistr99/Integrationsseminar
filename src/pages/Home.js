@@ -29,7 +29,6 @@ function Home() {
   return (
     <>
     <div className="App">
-      <ResponsiveAppBar />
             
         <h1> Willkommen zu QuantumLeap Senior!</h1>
         
