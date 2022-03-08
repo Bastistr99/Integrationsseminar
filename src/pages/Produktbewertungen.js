@@ -1,12 +1,19 @@
 import "./App.css";
 import ResponsiveAppBar from "../components/Navbar";
+import Auswahl from "../components/Auswahl";
+import DataGridProdukte from "../components/DataGridProdukte";
+
 
 
 function Produktbewertungen() {
 
   return (
     <div className="App">
-      <h1> Diese Seite befindet sich im Aufbau </h1>
+      <ResponsiveAppBar />
+
+      <Auswahl/>
+
+      <DataGridProdukte />
     </div>
   );
 }

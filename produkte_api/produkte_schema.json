@@ -17,6 +17,10 @@
             "type": "string",
             "description": "Kategorie, zu der das Produkt gehört"
         },
+        "beschreibung": {
+            "type": "string",
+            "description": "Nähere Beschreibung des Produkts"
+        },
         "uvp": {
             "type": "number",
             "description": "Unverbindliche Preisempfehlung, mit der das Produkt ausgeschrieben ist"
