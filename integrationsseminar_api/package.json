@@ -15,5 +15,8 @@
     "dotenv": "^14.2.0",
     "express": "^4.17.2",
     "mongoose": "^6.1.7"
+  },
+  "devDependencies": {
+    "json-loader": "^0.5.7"
   }
 }

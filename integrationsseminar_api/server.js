@@ -2,6 +2,7 @@ import express from "express";
 import cors from "cors";
 import mongoose from 'mongoose';
 import 'dotenv/config'
+import { readFile } from 'fs/promises';
 
 
 const uri = `mongodb+srv://intseminar_admin:${process.env.PASSWORD}@integrationsseminar.btrdy.mongodb.net/Integrationsseminar?retryWrites=true&w=majority`;
