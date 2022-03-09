@@ -1,127 +1,127 @@
 {
     "computererfahrung": {
         "frage": "Wie stark haben Sie sich beruflich/privat mit neuen, innovativen Geräten/Technologien auseinander gesetzt?",
-        "erklärung": "",
+        "erklaerung": "",
         "antwort": 0
     },
     "alter": {
         "frage": "Wie alt sind sie?",
-        "erklärung": "",
+        "erklaerung": "",
         "antwort": 0
     },
     "geschlecht": {
         "frage": "Welchem Geschlecht ordnen Sie sich zu?",
-        "erklärung": "",
+        "erklaerung": "",
         "antwort": 0
     },
     "selbststaendigkeit": {
         "frage": "Bei Anwendungen des Produkts wird die Selbstständigkeit gefördert.",
-        "erklärung": "Selbstständigkeit = selbstständige Ausführung einer Handlung",
+        "erklaerung": "Selbstständigkeit = selbstständige Ausführung einer Handlung",
         "antwort": 0
     },
     "sicherheit": {
         "frage": "Bei Anwendungen des Produkts wird die geistige und körperliche Sicherheit gefördert.",
-        "erklärung": " (z.B. weniger Sorgen zu stürzen, weniger Sorgen, dass ein Herd angelassen wurde, weniger Überforderung usw.)",
+        "erklaerung": " (z.B. weniger Sorgen zu stürzen, weniger Sorgen, dass ein Herd angelassen wurde, weniger Überforderung usw.)",
         "antwort": 0
     },
     "gesellschaftlicheTeilnahme": {
         "frage": "Bei Anwendungen des Produkts wird die geistige und körperliche Sicherheit gefördert.",
-        "erklärung": "(und Vermeidung sozialer Isolation)",
+        "erklaerung": "(und Vermeidung sozialer Isolation)",
         "antwort": 0
     },
     "medikamentenKonsum": {
         "frage": "Bei Anweungen des Produkts ist ein geringerer Medikamentenkonsum oder sogar weniger invasivere medizinische Maßnahmen/Therapien notwendig",
-        "erklärung": "",
+        "erklaerung": "",
         "antwort": 0
     },
     "akzeptanz": {
         "frage": "Bei Anwendung des Produkts ist die Akzeptanz hoch",
-        "erklärung": "Akzeptieren Sie das Produkt?",
+        "erklaerung": "Akzeptieren Sie das Produkt?",
         "antwort": 0
     },
     "koerperlicheEntlastung": {
         "frage": "Durch die Anwendung des Produkts werden Betreuer/ Angehörige/ Pflegende körperlich entlastet",
-        "erklärung": "",
+        "erklaerung": "",
         "antwort": 0
     },
     "psychischeEntlastung": {
         "frage": "Durch die Anwendung des Produkts werden Betreuer/ Angehörige/ Pflegende psychisch entlastet",
-        "erklärung": "",
+        "erklaerung": "",
         "antwort": 0
     },
     "finanzielleEntlastung": {
         "frage": "Durch die Anwendung des Produkts werden Betreuer/ Angehörige/ Pflegende Zeitlich oder finanziell entlastet ",
-        "erklärung": "",
+        "erklaerung": "",
         "antwort": 0
     },
     "fuersorge": {
         "frage": "Bei Anwendung des Produkts wird mehr Fürsorge ermöglicht",
-        "erklärung": "",
+        "erklaerung": "",
         "antwort": 0
     },
     "kompartibel": {
         "frage": "Das Produkt ist einfach kompatibel mit jeder bestehenden Lebensumgebung oder dem Wohnraum ohne aufwendige Anpassungen",
-        "erklärung": "",
+        "erklaerung": "",
         "antwort": 0
     },
     "robust": {
         "frage": "Das Produkt ist robust, langlebig und ausfallsicher",
-        "erklärung": "",
+        "erklaerung": "",
         "antwort": 0
     },
     "support": {
         "frage": "Das Produkt hat einen sehr guten Support und bei Problemen ist Unterstützungspersonal über mehrere Kanäle erreichbar",
-        "erklärung": "(inbesondere Telefon)",
+        "erklaerung": "(inbesondere Telefon)",
         "antwort": 0
     },
     "ausfall": {
         "frage": "Das Produkt ist für den Nutzer bei Ausfall ungefährlich bzw bietet funktionale Ausfalllösungen",
-        "erklärung": "",
+        "erklaerung": "",
         "antwort": 0
     },
     "einrichtung": {
         "frage": "Das Produkt ist einfach einzurichten/ zu installieren ",
-        "erklärung": "",
+        "erklaerung": "",
         "antwort": 0
     },
     "bedienung": {
         "frage": "Das Produkt ist intuitiv zu bedienen mit wenig und sehr gut aufbereitetem Schulungsbedarf und hoher Barrierefreiheit",
-        "erklärung": "",
+        "erklaerung": "",
         "antwort": 0
     },
     "datentransparenz": {
         "frage": "Das Produkt gewährleistet eine hohe Datentransparenz",
-        "erklärung": "(bekannt welche Daten wo gespeichert werden, von wem einsehbar? was wird gespeichert? Wie lange?)",
+        "erklaerung": "(bekannt welche Daten wo gespeichert werden, von wem einsehbar? was wird gespeichert? Wie lange?)",
         "antwort": 0
     },
     "leistungsfähigkeit": {
         "frage": "Das Produkt ist sehr effektiv und Leistungsfähigkeit in Bezug auf seine Hauptfunktion",
-        "erklärung": "(zunehmend unverzichtbar)",
+        "erklaerung": "(zunehmend unverzichtbar)",
         "antwort": 0
     },
     "anschaffungskosten": {
         "frage": "Das Produkt hat akzeptable Anschaffungskosten oder diese werden vom Kostenträger übernommen",
-        "erklärung": "",
+        "erklaerung": "",
         "antwort": 0
     },
     "service": {
         "frage": "Das Produkt zeichnet sich durch günstigen Service/ Support aus",
-        "erklärung": "",
+        "erklaerung": "",
         "antwort": 0
     },
     "laufendeKosten": {
         "frage": "Das Produkt hat geringe laufende Kosten",
-        "erklärung": "(Verbrauchsmaterial, SIM-Karten, Telekomverträge, in App-Käufe)",
+        "erklaerung": "(Verbrauchsmaterial, SIM-Karten, Telekomverträge, in App-Käufe)",
         "antwort": 0
     },
     "betreuungsaufwand": {
         "frage": "Das Produkt hat einen geringen Betreuungsaufwand durch Anwender und Betreuer",
-        "erklärung": "(z.B. Aufladezeit, Updates)",
+        "erklaerung": "(z.B. Aufladezeit, Updates)",
         "antwort": 0
     },
     "empfehlung": {
         "frage": "Würden Sie das Produkt nach ihrem aktuellen Kenntnisstand an Angehörige oder Anwender weiter empfehlen?",
-        "erklärung": "",
+        "erklaerung": "",
         "antwort": 0
     }
 }
