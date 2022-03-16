@@ -16,7 +16,6 @@ app.use(cors());
 
 const body = [];
 
-
 mongoose.connect(uri).then(res => app.listen(3001, () => {
   console.log("Listening on Port 3001");
 })).catch((err) => console.log(err))

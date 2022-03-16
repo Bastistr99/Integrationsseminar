@@ -4,6 +4,7 @@ import MenuItem from '@mui/material/MenuItem';
 import FormHelperText from '@mui/material/FormHelperText';
 import FormControl from '@mui/material/FormControl';
 import Select from '@mui/material/Select';
+import { Typography } from '@mui/material';
 
 export default function Auswahl() {
   const [age, setAge] = React.useState(0);
@@ -26,7 +27,8 @@ export default function Auswahl() {
           <MenuItem value={1}>Mobiltelefone</MenuItem>
           <MenuItem value={2}>Haushaltsgeräte</MenuItem>
         </Select>
-        <FormHelperText>Kategorie</FormHelperText>
+        <FormHelperText> <Typography variant="h6"> Kategorie </Typography> </FormHelperText>
+      
       </FormControl>
     </div>
   );

@@ -1,8 +1,14 @@
 import React from 'react';
 import { DataGrid, GridRowsProp, GridColDef } from '@mui/x-data-grid';
+import ProductRequestSrc from '../test_api_src';
+//const {exec} = require("child_process");
+//import { exec } from 'child_process';
+
+
+
 
 const rows: GridRowsProp = [
-  { id: 1, col1: 'Hello', col2: 'World' }
+  { id: 1, col1: 'hi', col2: 'World' }
 ];
 
 const columns: GridColDef[] = [
@@ -12,6 +18,10 @@ const columns: GridColDef[] = [
   { field: 'col4', headerName: 'Kategorie', width: 150, },
   { field: 'col5', headerName: 'Gesamtbewertung', width: 150, flex:1 },
 ];
+
+//ProductRequestSrc();
+
+//exec("../test_api_src");
 
 export default function DataGridProdukte() {
   return (
