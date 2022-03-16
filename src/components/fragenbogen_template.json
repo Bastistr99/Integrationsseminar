@@ -1,0 +1,127 @@
+{
+    "computererfahrung": {
+        "frage": "Wie stark haben Sie sich beruflich/privat mit neuen, innovativen Geräten/Technologien auseinander gesetzt?",
+        "erklaerung": "",
+        "antwort": 0
+    },
+    "alter": {
+        "frage": "Wie alt sind sie?",
+        "erklaerung": "",
+        "antwort": 0
+    },
+    "geschlecht": {
+        "frage": "Welchem Geschlecht ordnen Sie sich zu?",
+        "erklaerung": "",
+        "antwort": 0
+    },
+    "selbststaendigkeit": {
+        "frage": "Bei Anwendungen des Produkts wird die Selbstständigkeit gefördert.",
+        "erklaerung": "Selbstständigkeit = selbstständige Ausführung einer Handlung",
+        "antwort": 0
+    },
+    "sicherheit": {
+        "frage": "Bei Anwendungen des Produkts wird die geistige und körperliche Sicherheit gefördert.",
+        "erklaerung": " (z.B. weniger Sorgen zu stürzen, weniger Sorgen, dass ein Herd angelassen wurde, weniger Überforderung usw.)",
+        "antwort": 0
+    },
+    "gesellschaftlicheTeilnahme": {
+        "frage": "Bei Anwendungen des Produkts wird die geistige und körperliche Sicherheit gefördert.",
+        "erklaerung": "(und Vermeidung sozialer Isolation)",
+        "antwort": 0
+    },
+    "medikamentenKonsum": {
+        "frage": "Bei Anweungen des Produkts ist ein geringerer Medikamentenkonsum oder sogar weniger invasivere medizinische Maßnahmen/Therapien notwendig",
+        "erklaerung": "",
+        "antwort": 0
+    },
+    "akzeptanz": {
+        "frage": "Bei Anwendung des Produkts ist die Akzeptanz hoch",
+        "erklaerung": "Akzeptieren Sie das Produkt?",
+        "antwort": 0
+    },
+    "koerperlicheEntlastung": {
+        "frage": "Durch die Anwendung des Produkts werden Betreuer/ Angehörige/ Pflegende körperlich entlastet",
+        "erklaerung": "",
+        "antwort": 0
+    },
+    "psychischeEntlastung": {
+        "frage": "Durch die Anwendung des Produkts werden Betreuer/ Angehörige/ Pflegende psychisch entlastet",
+        "erklaerung": "",
+        "antwort": 0
+    },
+    "finanzielleEntlastung": {
+        "frage": "Durch die Anwendung des Produkts werden Betreuer/ Angehörige/ Pflegende Zeitlich oder finanziell entlastet ",
+        "erklaerung": "",
+        "antwort": 0
+    },
+    "fuersorge": {
+        "frage": "Bei Anwendung des Produkts wird mehr Fürsorge ermöglicht",
+        "erklaerung": "",
+        "antwort": 0
+    },
+    "kompartibel": {
+        "frage": "Das Produkt ist einfach kompatibel mit jeder bestehenden Lebensumgebung oder dem Wohnraum ohne aufwendige Anpassungen",
+        "erklaerung": "",
+        "antwort": 0
+    },
+    "robust": {
+        "frage": "Das Produkt ist robust, langlebig und ausfallsicher",
+        "erklaerung": "",
+        "antwort": 0
+    },
+    "support": {
+        "frage": "Das Produkt hat einen sehr guten Support und bei Problemen ist Unterstützungspersonal über mehrere Kanäle erreichbar",
+        "erklaerung": "(inbesondere Telefon)",
+        "antwort": 0
+    },
+    "ausfall": {
+        "frage": "Das Produkt ist für den Nutzer bei Ausfall ungefährlich bzw bietet funktionale Ausfalllösungen",
+        "erklaerung": "",
+        "antwort": 0
+    },
+    "einrichtung": {
+        "frage": "Das Produkt ist einfach einzurichten/ zu installieren ",
+        "erklaerung": "",
+        "antwort": 0
+    },
+    "bedienung": {
+        "frage": "Das Produkt ist intuitiv zu bedienen mit wenig und sehr gut aufbereitetem Schulungsbedarf und hoher Barrierefreiheit",
+        "erklaerung": "",
+        "antwort": 0
+    },
+    "datentransparenz": {
+        "frage": "Das Produkt gewährleistet eine hohe Datentransparenz",
+        "erklaerung": "(bekannt welche Daten wo gespeichert werden, von wem einsehbar? was wird gespeichert? Wie lange?)",
+        "antwort": 0
+    },
+    "leistungsfähigkeit": {
+        "frage": "Das Produkt ist sehr effektiv und Leistungsfähigkeit in Bezug auf seine Hauptfunktion",
+        "erklaerung": "(zunehmend unverzichtbar)",
+        "antwort": 0
+    },
+    "anschaffungskosten": {
+        "frage": "Das Produkt hat akzeptable Anschaffungskosten oder diese werden vom Kostenträger übernommen",
+        "erklaerung": "",
+        "antwort": 0
+    },
+    "service": {
+        "frage": "Das Produkt zeichnet sich durch günstigen Service/ Support aus",
+        "erklaerung": "",
+        "antwort": 0
+    },
+    "laufendeKosten": {
+        "frage": "Das Produkt hat geringe laufende Kosten",
+        "erklaerung": "(Verbrauchsmaterial, SIM-Karten, Telekomverträge, in App-Käufe)",
+        "antwort": 0
+    },
+    "betreuungsaufwand": {
+        "frage": "Das Produkt hat einen geringen Betreuungsaufwand durch Anwender und Betreuer",
+        "erklaerung": "(z.B. Aufladezeit, Updates)",
+        "antwort": 0
+    },
+    "empfehlung": {
+        "frage": "Würden Sie das Produkt nach ihrem aktuellen Kenntnisstand an Angehörige oder Anwender weiter empfehlen?",
+        "erklaerung": "",
+        "antwort": 0
+    }
+}

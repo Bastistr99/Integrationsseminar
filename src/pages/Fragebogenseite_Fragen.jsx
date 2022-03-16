@@ -23,6 +23,7 @@ const FragebogenseiteFragen = () => {
           }}
           results={inputFields}
         />
+        <div  style={{alignItems: "center", justifyContent: "center", display: "flex"}}>
         <QuestionButton
           changeProgress={(progress_button) => {
             setProgress(progress_button);
@@ -36,6 +37,7 @@ const FragebogenseiteFragen = () => {
             setToggleFragen(res);
           }}
         />
+        </div>
       </div>
     );
 }

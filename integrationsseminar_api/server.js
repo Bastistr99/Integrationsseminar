@@ -20,7 +20,6 @@ mongoose.connect(uri).then(res => app.listen(3001, () => {
   console.log("Listening on Port 3001");
 })).catch((err) => console.log(err))
 
-
 app.get("/", (req, res) => {
   res.send("Hello World!");
 });

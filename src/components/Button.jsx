@@ -6,13 +6,14 @@ import { Button } from '@mui/material';
 const QuestionButton = ({changeProgress, changeCount, neuer_counter, reviews, toggleHomescreen}) => {
     return (
         <div>
-            {neuer_counter <= 17 ? (
+            {neuer_counter <= 26 ? (
           <Button
             variant="contained"
             onClick={() => {
               changeCount(neuer_counter + 1)
-              changeProgress(neuer_counter * 6)
+              changeProgress(neuer_counter * 3.8)
             }}
+            sx={{alignItems: "center", justifyContent: "center", display: "flex"}}
           >
             Nächste Frage
           </Button>
