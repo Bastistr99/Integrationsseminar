@@ -91,7 +91,7 @@ const geschlechtIcons = {
   },
   3: {
     icon: <TransgenderIcon style={{fontSize: "70px", color: "darkgreen", marginLeft: "1vh", marginRight: "1vh"}} />,
-    label: <Typography variant="h6" sx={{ color: "darkgreen" }}> Transgender</Typography>,
+    label: <Typography variant="h6" sx={{ color: "darkgreen" }}> Divers</Typography>,
   },
   4: {
     icon: <DoNotDisturbIcon style={{fontSize: "70px", color: "black", marginLeft: "1vh", marginRight: "1vh"}} />,
@@ -137,18 +137,21 @@ export default function BasicRating({ count, getResult, result }) {
 
   const [hover, setHover] = React.useState(-1);
 
+
   const handleChangeInput = (index, event) => {
     const values = [...result];
     values[index][event.target.name] = event.target.value;
     getResult(values);
-    console.log(result);
+    
   };
+
+  
 
   const handleAddReview = () => {
     getResult([
       ...result,
       {
-        antwort: "",
+        antwort: '',
         sternwert: 0,
       },
     ]);

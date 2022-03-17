@@ -7,7 +7,7 @@ import { CardActionArea } from '@mui/material';
 
 const Produkte = ({bild, titel, beschreibung, id}) => {
     return (
-        <Card sx={{ maxWidth: 345 }}>
+        <Card sx={{ maxWidth: 400, maxHeight: 500 }}>
           <CardActionArea onClick={() => {
             if(id === "XTC"){
               window.location.href=`/fragebogenseite`

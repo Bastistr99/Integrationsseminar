@@ -11,13 +11,20 @@ const FragebogenseiteFragen = () => {
     const [inputFields, setInputFields] = useState([
       { antwort: "", sternwert: 0 },
     ]);
+    const [antworten, setAntworten] = useState([{
+      frage: "", antwort: ""
+    },]);
 
+    console.log(antworten)
     
     return (
         <div>
         <LinearWithValueLabel value={progress > 100 ? 100 : progress} />
         <Fragebogen
           count={count - 1}
+          setAntworten = {((antwort) => {
+            setAntworten(antwort)
+          })}
           getResults={(result) => {
             setInputFields(result);
           }}
@@ -33,6 +40,7 @@ const FragebogenseiteFragen = () => {
           }}
           neuer_counter={count}
           reviews={inputFields}
+          fragebogen_complete= {antworten}
           toggleHomescreen={(res) => {
             setToggleFragen(res);
           }}
