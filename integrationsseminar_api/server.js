@@ -4,9 +4,10 @@ import mongoose from 'mongoose';
 import 'dotenv/config'
 
 
-const uri = `mongodb+srv://intseminar_admin:${process.env.PASSWORD}@integrationsseminar.btrdy.mongodb.net/Integrationsseminar?retryWrites=true&w=majority`;
+const uri = `mongodb+srv://${process.env.USER}:${process.env.PASSWORD}@integrationsseminar.btrdy.mongodb.net/Integrationsseminar?retryWrites=true&w=majority`;
 import Review from "./models/review.js";
 import Product from "./models/produkte.js";
+import ProduktModel from "./models/produkte2.js";
 
 
 const app = express();
@@ -15,7 +16,6 @@ app.use(express.json());
 app.use(cors());
 
 const body = [];
-
 
 mongoose.connect(uri).then(res => app.listen(3001, () => {
   console.log("Listening on Port 3001");
@@ -56,6 +56,20 @@ produkt.save().then((result) => {
     console.log(err)
   })
 });
+
+
+
+app.get("/get_produkte", async (req, res) => {
+  let ergebnis;
+  try {
+    ergebnis = await ProduktModel.find();
+    console.log(ergebnis);
+  }
+  catch {
+    console.log("fehler");
+  }
+  
+})
 
 
 

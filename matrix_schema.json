@@ -69,7 +69,8 @@
                         },
                         "komfortabel": {
                             "type": "number",
-                            "description": "Komfortable in der Anwendung/ Wohlbefinden "
+                            "description": "Komfortable in der Anwendung/ Wohlbefinden ",
+                            "frage": "Teste123"
                         }
                     },
                     "description": "Fragen für den Nutzer"

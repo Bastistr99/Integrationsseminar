@@ -2,7 +2,7 @@ import React from 'react';
 import { DataGrid, GridRowsProp, GridColDef } from '@mui/x-data-grid';
 
 const rows: GridRowsProp = [
-  { id: 1, col1: 'Hello', col2: 'World' }
+  { id: 1, col1: 'hi', col2: 'World' }
 ];
 
 const columns: GridColDef[] = [
@@ -12,6 +12,7 @@ const columns: GridColDef[] = [
   { field: 'col4', headerName: 'Kategorie', width: 150, },
   { field: 'col5', headerName: 'Gesamtbewertung', width: 150, flex:1 },
 ];
+
 
 export default function DataGridProdukte() {
   return (
