@@ -3,7 +3,7 @@ import cors from "cors";
 import mongoose from "mongoose";
 import "dotenv/config";
 
-const uri = `mongodb+srv://intseminar_admin:${process.env.PASSWORD}@integrationsseminar.btrdy.mongodb.net/Integrationsseminar?retryWrites=true&w=majority`;
+const uri = `mongodb+srv://${process.env.USER}:${process.env.PASSWORD}@integrationsseminar.btrdy.mongodb.net/Integrationsseminar?retryWrites=true&w=majority`;
 import Review from "./models/review.js";
 import Product from "./models/produkte.js";
 import ProduktModel from "./models/produkte2.js";
@@ -70,5 +70,4 @@ app.post("/produkte", (req, res) => {
 app.get("/get_produkte", async (req, res) => {
  let ergebnis = await ProduktModel.find();
  res.send(ergebnis)
-
 });
