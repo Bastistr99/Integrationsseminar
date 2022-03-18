@@ -64,6 +64,7 @@ app.get("/get_produkte", async (req, res) => {
   try {
     ergebnis = await ProduktModel.find();
     console.log(ergebnis);
+    return res.json(ergebnis);
   }
   catch {
     console.log("fehler");
