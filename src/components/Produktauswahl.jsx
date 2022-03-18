@@ -32,28 +32,28 @@ const Produktauswahl = () => {
             <Box sx={{flexGrow: 1, marginTop: "3vh"}}>
                 <Grid container spacing={4}>
                     <Grid item xs={4} sx={{alignItems: "center", justifyContent: "center", display: "flex"}}>
-                          <Produkte beschreibung={"Hier finden Sie alle Kategorien die mit dem Thema Gesundheit & Pflege zu tun haben"} bild={HealthBild} titel={"Gesundheit & Pflege"} id={"GesundheitPflege"} />
+                          <Produkte beschreibung={"Hier finden Sie alle Kategorien die mit dem Thema Gesundheit & Pflege zu tun haben"} bild={HealthBild} titel={"Gesundheit & Pflege"} id={"GesundheitPflege"} minHeight={300} />
                     </Grid>
                     <Grid item xs={4} sx={{alignItems: "center", justifyContent: "center", display: "flex"}}>
-                    <Produkte beschreibung={"Hier finden Sie alle Kategorien die mit dem Thema Wohnen & Gebäude zu tun haben"} bild={WohnenBild} titel={"Wohnen & Gebäude"} />
+                    <Produkte beschreibung={"Hier finden Sie alle Kategorien die mit dem Thema Wohnen & Gebäude zu tun haben"} bild={WohnenBild} titel={"Wohnen & Gebäude"} id={"WohnenGebaude"} minHeight={300}/>
                     </Grid>
                     <Grid item xs={4} sx={{alignItems: "center", justifyContent: "center", display: "flex"}}>
-                    <Produkte beschreibung={"Hier finden Sie alle Kategorien die mit dem Thema Freizeit & Kultur zu tun haben"} bild={CultureBild} titel={"Freizeit & Kultur"} />
+                    <Produkte beschreibung={"Hier finden Sie alle Kategorien die mit dem Thema Freizeit & Kultur zu tun haben"} bild={CultureBild} titel={"Freizeit & Kultur"} id={"FreitzeitKultur"} minHeight={300}/>
                     </Grid>
                     <Grid item xs={4} sx={{alignItems: "center", justifyContent: "center", display: "flex"}}>
-                    <Produkte beschreibung={"Hier finden Sie alle Kategorien die mit dem Thema Vitalität & Fähigkeiten zu tun haben"} bild={VitilityBild} titel={"Vitalität & Fähigkeiten"} />
+                    <Produkte beschreibung={"Hier finden Sie alle Kategorien die mit dem Thema Vitalität & Fähigkeiten zu tun haben"} bild={VitilityBild} titel={"Vitalität & Fähigkeiten"} id={"VitalitaetFaehigkeiten"} minHeight={300}/>
                     </Grid>
                     <Grid item xs={4} sx={{alignItems: "center", justifyContent: "center", display: "flex"}}>
-                    <Produkte beschreibung={"Hier finden Sie alle Kategorien die mit dem Thema Mobilität & Transport zu tun haben"} bild={MobilityBild} titel={"Mobilität & Transport"} />
+                    <Produkte beschreibung={"Hier finden Sie alle Kategorien die mit dem Thema Mobilität & Transport zu tun haben"} bild={MobilityBild} titel={"Mobilität & Transport"} id={"MobilitaetTransport"} minHeight={300}/>
                     </Grid>
                     <Grid item xs={4} sx={{alignItems: "center", justifyContent: "center", display: "flex"}}>
-                    <Produkte beschreibung={"Hier finden Sie alle Kategorien die mit dem Thema Arbeit & Schulung zu tun haben"} bild={WorkBild} titel={"Arbeit & Schulung"} />
+                    <Produkte beschreibung={"Hier finden Sie alle Kategorien die mit dem Thema Arbeit & Schulung zu tun haben"} bild={WorkBild} titel={"Arbeit & Schulung"} id={"ArbeitSchulung"} minHeight={300}/>
                     </Grid>
                     <Grid item xs={6} sx={{alignItems: "center", justifyContent: "center", display: "flex"}}>
-                    <Produkte beschreibung={"Hier finden Sie alle Kategorien die mit dem Thema Sicherheit & Schutz zu tun haben"} bild={SecurityBild} titel={"Sicherheit & Schutz"} />
+                    <Produkte beschreibung={"Hier finden Sie alle Kategorien die mit dem Thema Sicherheit & Schutz zu tun haben"} bild={SecurityBild} titel={"Sicherheit & Schutz"} id={"SicherheitSchutz"} minHeight={300}/>
                     </Grid>
                     <Grid item xs={6} sx={{alignItems: "center", justifyContent: "center", display: "flex"}}>
-                    <Produkte beschreibung={"Hier finden Sie alle Kategorien die mit dem Thema Informationen & Kommunikation zu tun haben"} bild={InfoBild} titel={"Informationen & Kommunikation"} />
+                    <Produkte beschreibung={"Hier finden Sie alle Kategorien die mit dem Thema Informationen & Kommunikation zu tun haben"} bild={InfoBild} titel={"Informationen & Kommunikation"} id={"InformationKommunikation"} minHeight={300}/>
                     </Grid>
                 </Grid>
             </Box>

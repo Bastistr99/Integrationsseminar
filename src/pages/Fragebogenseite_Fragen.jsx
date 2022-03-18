@@ -12,13 +12,13 @@ const FragebogenseiteFragen = () => {
       { antwort: "", sternwert: 0 },
     ]);
     const [antworten, setAntworten] = useState([{
-      frage: "", antwort: ""
+      frage: "", antwort: "", productid: 0
     },]);
 
     console.log(antworten)
     
     return (
-        <div>
+        <div style={{position: "relative", height: "50vh"}}>
         <LinearWithValueLabel value={progress > 100 ? 100 : progress} />
         <Fragebogen
           count={count - 1}

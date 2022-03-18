@@ -5,7 +5,7 @@ import { Button } from '@mui/material';
 
 const QuestionButton = ({changeProgress, changeCount, neuer_counter, reviews, toggleHomescreen,  fragebogen_complete}) => {
     return (
-        <div>
+        <div style={{position: "absolute", top: "100%"}}>
             {neuer_counter <= 25 ? (
           <Button
             variant="contained"

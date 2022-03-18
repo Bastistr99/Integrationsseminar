@@ -5,12 +5,12 @@ import CardMedia from '@mui/material/CardMedia';
 import Typography from '@mui/material/Typography';
 import { CardActionArea } from '@mui/material';
 
-const Produkte = ({bild, titel, beschreibung, id}) => {
+const Produkte = ({bild, titel, beschreibung, id, preis, minHeight}) => {
     return (
-        <Card sx={{ maxWidth: 400, maxHeight: 500 }}>
+        <Card sx={{width: 500, minHeight: minHeight,  position: "relative" }}>
           <CardActionArea onClick={() => {
-            if(id === "XTC"){
-              window.location.href=`/fragebogenseite`
+            if(id < 17){
+              window.location.href=`/fragebogenseite/${id}`
             } else {
               window.location.href=`/${id}`
             }
@@ -18,15 +18,19 @@ const Produkte = ({bild, titel, beschreibung, id}) => {
           }}>
             <CardMedia
               component="img"
-              height="140"
+              height="150"
               image={bild}
             />
             <CardContent>
-              <Typography gutterBottom variant="h4" component="div">
+              <Typography gutterBottom variant="h4" component="div" sx={{marginTop: "1vh"}}>
                 {titel}
               </Typography>
               <Typography variant="body1" color="text.secondary" fontWeight="500">
                {beschreibung}
+              </Typography>
+              <Typography variant="h4" color="text.secondary" fontWeight="500" >
+                {preis == undefined ? "" : preis + "€"}
+               
               </Typography>
             </CardContent>
           </CardActionArea>
