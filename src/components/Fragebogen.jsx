@@ -3,12 +3,15 @@ import React, {useState, useEffect} from "react";
 import Fragen from "./Fragen";
 import BasicRating from "./Rating";
 import FragebogenTemplate from "./fragenbogen_template.json";
+import { useParams } from "react-router-dom";
 
 const Fragebogen = ({ count, getResults, results, setAntworten }) => {
 
   const [fragebogen, setFragebogen] = useState([])
 
   const frage = []
+  const { id } = useParams();
+
   for(var fragen in FragebogenTemplate){
       frage.push(FragebogenTemplate[fragen].frage)
   }  
@@ -18,7 +21,8 @@ const Fragebogen = ({ count, getResults, results, setAntworten }) => {
       results.map((antwort,i) => {
         let body = {
           frage: frage[i],
-          antwort: antwort.sternwert
+          antwort: antwort.sternwert,
+          productid: id
         }
         setFragebogen(oldarray => [...oldarray, body])
       })

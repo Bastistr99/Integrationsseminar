@@ -9,7 +9,7 @@ const JsonObjekt = ({review, toggleHomescreen}) => {
       method: "POST",
       headers: { "Content-Type": "application/json" },
       body: JSON.stringify({
-       id: 1,
+       id: review[1].productid,
        antwort: review,
        fragen: review
       }),

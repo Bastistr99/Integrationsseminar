@@ -82,19 +82,19 @@ const geschlechtIcons = {
    label: ""
   },
   1: {
-    icon: <MaleIcon style={{fontSize: "70px", color: "darkblue", marginLeft: "1vh", marginRight: "1vh"}}/>,
+    icon: "Mann",
     label: <Typography variant="h6" sx={{ color: "darkblue" }} >Männlich</Typography>,
   },
   2: {
-    icon: <FemaleIcon style={{fontSize: "70px", color: "pink", marginLeft: "1vh", marginRight: "1vh"}} />,
+    icon: "Frau",
     label: <Typography variant="h6" sx={{ color: "pink" }}> Weiblich</Typography>,
   },
   3: {
-    icon: <TransgenderIcon style={{fontSize: "70px", color: "darkgreen", marginLeft: "1vh", marginRight: "1vh"}} />,
+    icon: "Andere / Divers",
     label: <Typography variant="h6" sx={{ color: "darkgreen" }}> Divers</Typography>,
   },
   4: {
-    icon: <DoNotDisturbIcon style={{fontSize: "70px", color: "black", marginLeft: "1vh", marginRight: "1vh"}} />,
+    icon: "Keine Angabe",
     label: <Typography variant="h6" sx={{ color: "black" }}> Keine Angabe</Typography>,
   }
 }
