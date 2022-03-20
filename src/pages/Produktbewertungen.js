@@ -10,8 +10,8 @@ function Produktbewertungen() {
   return (
     <div className="App">
 
-      <Auswahl/>
-
+{/*       <Auswahl/>
+ */}
       <DataGridProdukte />
     </div>
   );

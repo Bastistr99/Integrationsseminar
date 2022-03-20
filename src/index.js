@@ -6,6 +6,7 @@ import Home from './pages/Home';
 import Fragebogenseite from './pages/Fragebogenseite';
 import Produktvergleich from './pages/produktvergleich';
 import Produktbewertungen from './pages/Produktbewertungen';
+import Produktseite from './pages/Produktseite';
 
 import GesundheitPflege from './components/Produktauswahlseiten/GesundheitPflege';
 import WohnenGebaude from './components/Produktauswahlseiten/WohnenGebaude';
@@ -30,6 +31,7 @@ export default function App() {
         <Route path="/fragebogen" element={<Fragebogenseite />} />
         <Route path="/produktvergleich" element={<Produktvergleich />} />
         <Route path="/produktbewertungen" element={<Produktbewertungen />} />
+        <Route path="/produkt/:id" element={<Produktseite />} />
         <Route path='/gesundheitpflege' element={<GesundheitPflege />} />
         <Route path="/wohnengebaude" element={<WohnenGebaude />} />
         <Route path="/FreitzeitKultur" element={<FreitzeitKultur />} />
