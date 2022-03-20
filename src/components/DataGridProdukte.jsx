@@ -1,14 +1,21 @@
 import React from 'react';
-import { DataGrid, GridRowsProp, GridColDef } from '@mui/x-data-grid';
+import { DataGrid } from '@mui/x-data-grid';
+import Link from '@mui/material/Link';
 import { useState, useEffect } from 'react';
-
 
 const columns = [
   { field: 'name', headerName: 'Name', width: 250 },
   { field: 'beschreibung', headerName: 'Beschreibung', width: 400 },
   { field: 'kategorie', headerName: 'Kategorie', width: 200 },
   { field: 'uvp', headerName: 'UVP', width: 70, },
-  { field: 'bewertung', headerName: 'Gesamtbewertung', width: 150, flex:1 },
+  { field: 'link', headerName: 'Bewertung', width: 150, flex:1,
+  renderCell: (params) => (
+    <Link href={`${params.value}`}>Zur Bewertungsübersicht</Link>
+  )},
+];
+
+const rows = [
+  {id: 1, name: 'lol', link: "lol" }
 ];
 
 
@@ -28,7 +35,12 @@ export default function DataGridProdukte() {
       ...rest
     }));
 
-    setProdukte(manipulatedResult);
+    const ResultWithLinks = await manipulatedResult.map(obj => ({
+      ...obj,
+      link: "/produkt/"+(obj.id - 1)
+    }));
+
+    setProdukte(ResultWithLinks);
   };
   
   useEffect(() => {
@@ -36,13 +48,8 @@ export default function DataGridProdukte() {
   }, []);
 
   return (
-    <div>
-      <div style={{ height: 500, width: '80%', marginLeft: '10%', marginTop: 30}}>
+      <div style={{ height: 600, width: '80%', marginLeft: '10%', marginTop: 30}}>
         <DataGrid rows={produkte} columns={columns} />
       </div>
-      <div>
-        <p id="test"></p>
-      </div>
-    </div>
   );
 }

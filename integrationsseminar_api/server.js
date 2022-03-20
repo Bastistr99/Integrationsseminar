@@ -71,3 +71,8 @@ app.get("/get_produkte", async (req, res) => {
  let ergebnis = await ProduktModel.find();
  res.send(ergebnis)
 });
+
+app.get("/get_reviews", async (req, res) => {
+  let ergebnis = await Review.find();
+  res.send(ergebnis)
+ });
