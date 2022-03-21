@@ -14,18 +14,13 @@ import SicherheitSchutz from './components/Produktauswahlseiten/SicherheitSchutz
 import InformationKommunikation from './components/Produktauswahlseiten/InformationKommunikation';
 import ResponsiveAppBar from "./components/Navbar";
 import FragebogenseiteFragen from './pages/Fragebogenseite_Fragen';
-import Produktübersicht from './components/Produktübersicht';
-import DataGridBewertungen from './components/DataGridBewertungen';
+import DataGridProdukte from "./components/DataGridProdukte";
 import Produktauswahl from './components/Produktauswahl';
+import Produktseite from './pages/Produktseite';
 
 
-
-
-import { useParams } from "react-router-dom";
 
 export default function App() {
-
-  const params = useParams();
 
   const theme = createTheme({
     palette: {
@@ -39,6 +34,7 @@ export default function App() {
     },
   });
 
+
   return (
     <div>
        <ThemeProvider theme={theme}>
@@ -49,8 +45,8 @@ export default function App() {
             <Route path='/home' element={<Home />} />
             <Route path="/fragebogen" element={<Produktauswahl />} />
             <Route path="/produktvergleich" element={<h1>Diese Seite befindet sich im Aufbau</h1>} />
-            <Route path="/produktbewertungen" element={<DataGridBewertungen />} />
-            <Route path="/produkt/:id" element={<Produktübersicht id={params.id}/>} />
+            <Route path="/produktbewertungen" element={<DataGridProdukte />} />
+            <Route path="/produkt/:id" element={<Produktseite />} />
             <Route path='/gesundheitpflege' element={<GesundheitPflege />} />
             <Route path="/wohnengebaude" element={<WohnenGebaude />} />
             <Route path="/FreitzeitKultur" element={<FreitzeitKultur />} />
