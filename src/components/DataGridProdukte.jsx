@@ -14,10 +14,6 @@ const columns = [
   )},
 ];
 
-const rows = [
-  {id: 1, name: 'lol', link: "lol" }
-];
-
 
 export default function DataGridProdukte() {
 
@@ -37,8 +33,10 @@ export default function DataGridProdukte() {
 
     const ResultWithLinks = await manipulatedResult.map(obj => ({
       ...obj,
-      link: "/produkt/"+(obj.id - 1)
+      link: "/produkt/"+(obj.id)
     }));
+
+    console.log(ResultWithLinks);
 
     setProdukte(ResultWithLinks);
   };
