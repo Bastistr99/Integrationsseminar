@@ -5,6 +5,8 @@ import QuestionButton from "../components/Button";
 import Fragebogen from "../components/Fragebogen";
 
 const FragebogenseiteFragen = () => {
+
+  //Verbindet die Fragen, mit dem Button beim beantworten des Fragenkatalogs 
     const [progress, setProgress] = useState(1);
     const [toggleFragen, setToggleFragen] = useState(false);
     const [count, setCount] = useState(1);

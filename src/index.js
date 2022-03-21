@@ -2,13 +2,8 @@ import React from 'react';
 import ReactDOM from 'react-dom';
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import './index.css';
-import Home from './pages/Home';
-import Fragebogenseite from './pages/Fragebogenseite';
-import Produktvergleich from './pages/produktvergleich';
-import Produktbewertungen from './pages/Produktbewertungen';
-import Produktseite from './pages/Produktseite';
-import { createTheme, ThemeProvider, styled } from '@mui/material/styles';
-
+import Home from './pages/Startseite';
+import { createTheme, ThemeProvider } from '@mui/material/styles';
 import GesundheitPflege from './components/Produktauswahlseiten/GesundheitPflege';
 import WohnenGebaude from './components/Produktauswahlseiten/WohnenGebaude';
 import FreitzeitKultur from './components/Produktauswahlseiten/FreizeitKultur';
@@ -17,11 +12,20 @@ import MobilitaetTransport from './components/Produktauswahlseiten/MobilitaetTra
 import ArbeitSchulung from './components/Produktauswahlseiten/ArbeitSchulung';
 import SicherheitSchutz from './components/Produktauswahlseiten/SicherheitSchutz';
 import InformationKommunikation from './components/Produktauswahlseiten/InformationKommunikation';
-
 import ResponsiveAppBar from "./components/Navbar";
 import FragebogenseiteFragen from './pages/Fragebogenseite_Fragen';
+import Produktübersicht from './components/Produktübersicht';
+import DataGridBewertungen from './components/DataGridBewertungen';
+import Produktauswahl from './components/Produktauswahl';
+
+
+
+
+import { useParams } from "react-router-dom";
 
 export default function App() {
+
+  const params = useParams();
 
   const theme = createTheme({
     palette: {
@@ -30,7 +34,7 @@ export default function App() {
       },
       secondary: {
         main: "#3F4657",
-        
+
       },
     },
   });
@@ -43,10 +47,10 @@ export default function App() {
           <Routes>
             <Route path="/" element={<Home />} />
             <Route path='/home' element={<Home />} />
-            <Route path="/fragebogen" element={<Fragebogenseite />} />
-            <Route path="/produktvergleich" element={<Produktvergleich />} />
-            <Route path="/produktbewertungen" element={<Produktbewertungen />} />
-            <Route path="/produkt/:id" element={<Produktseite />} />
+            <Route path="/fragebogen" element={<Produktauswahl />} />
+            <Route path="/produktvergleich" element={<h1>Diese Seite befindet sich im Aufbau</h1>} />
+            <Route path="/produktbewertungen" element={<DataGridBewertungen />} />
+            <Route path="/produkt/:id" element={<Produktübersicht id={params.id}/>} />
             <Route path='/gesundheitpflege' element={<GesundheitPflege />} />
             <Route path="/wohnengebaude" element={<WohnenGebaude />} />
             <Route path="/FreitzeitKultur" element={<FreitzeitKultur />} />

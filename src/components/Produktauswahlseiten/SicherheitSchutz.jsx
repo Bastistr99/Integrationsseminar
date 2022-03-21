@@ -1,7 +1,7 @@
 import { React, useEffect, useState } from "react";
 import Box from "@mui/material/Box";
 import Grid from "@mui/material/Grid";
-import Produkte from "../Produkte";
+import Produkte from "../Produkttemplate";
 
 const SicherheitSchutz = () => {
   const [produkte, setProdukte] = useState([]);

@@ -4,6 +4,8 @@ import DataGridBewertungen from './DataGridBewertungen';
 
 const Produktübersicht = (props) => {
 
+ //Zeigt in der einzelnen Produktübersicht das Bild, Titel und Beschreibung als auch die einzelnen Bewertungen an
+
     const [produkte, setProdukte] = useState ([]);
     const [isLoading, setIsLoading] = useState(true);
 

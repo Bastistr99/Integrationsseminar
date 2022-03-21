@@ -1,6 +1,11 @@
 import { Button } from "@mui/material";
 import React from "react";
 
+
+//Mit diesem Button werden die Daten, die davor durch den Fragebogen gesammelt werden an die MongoDB geschickt
+
+// POST 
+
 const JsonObjekt = ({review, toggleHomescreen}) => {
   console.log(review)
   const get_data = () => {

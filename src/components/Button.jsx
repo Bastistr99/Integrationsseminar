@@ -1,6 +1,9 @@
 import {React} from 'react';
-import SimpleBackdrop from './Backdrop';
+import SimpleBackdrop from './Backdrop_Fragebogenende';
 import { Button } from '@mui/material';
+
+
+//Dieses Objekt ist dazu da um zur nächsten Frage im Fragebogen zu gelangen
 
 
 const QuestionButton = ({changeProgress, changeCount, neuer_counter, reviews, toggleHomescreen,  fragebogen_complete}) => {

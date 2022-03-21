@@ -1,12 +1,7 @@
 import { React, useEffect, useState } from "react";
 import Box from "@mui/material/Box";
 import Grid from "@mui/material/Grid";
-import Produkte from "../Produkte";
-import Küchenbild from "./kitchen-tools.png";
-import Ofen from "./Ofen.jpg";
-import Kuechenmaschine from "./Kuechenmaschine.jpg";
-import Herd from "./Herd.jpg";
-import { Typography } from "@mui/material";
+import Produkte from "../Produkttemplate";
 
 const GesundheitPflege = () => {
   const [produkte, setProdukte] = useState([]);

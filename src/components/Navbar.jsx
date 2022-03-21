@@ -11,15 +11,17 @@ import Avatar from '@mui/material/Avatar';
 import Button from '@mui/material/Button';
 import Tooltip from '@mui/material/Tooltip';
 import MenuItem from '@mui/material/MenuItem';
-import ContactPhoneIcon from '@mui/icons-material/ContactPhone';
-import bild from "./woman-1353825_1280.png"
-import logo from "./earth-5766860_960_720.webp"
+import bild from "./pictures/woman-1353825_1280.png"
+import logo from "./pictures/earth-5766860_960_720.webp"
 
 const pages = ['Home','Fragebogen', 'Produktvergleich', 'Produktbewertungen', 'Kontakt'];
 const settings = ['Meine Bewertungen', 'Einstellungen', 'Profil', 'Logout'];
 
 
 const ResponsiveAppBar = () => {
+
+//Navbar des Projekts 
+
   const [anchorElNav, setAnchorElNav] = React.useState(null);
   const [anchorElUser, setAnchorElUser] = React.useState(null);
 

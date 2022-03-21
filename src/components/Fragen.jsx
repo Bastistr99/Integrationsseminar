@@ -3,6 +3,9 @@ import React from "react";
 
 const Fragen = ({ fragen_array, fragen_index }) => {
 
+
+  // Hier werden die Fragen aus dem Fragenarray angezeigt
+
 const frage = []
   for(var fragen in fragen_array){
    frage.push(fragen_array[fragen].frage)

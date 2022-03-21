@@ -5,6 +5,9 @@ import Divider from '@mui/material/Divider';
 import Chip from '@mui/material/Chip';
 
 
+// Holt sich das ausgewählt Produkt und zeigt zu jeder Frage die Durchschnittsantwort an
+
+
 const columns = [
   { field: 'frage', headerName: 'Frage', width:900 },
   { field: 'avg', headerName: 'Durchschnittliche Bewertung', width:300},

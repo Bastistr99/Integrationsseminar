@@ -1,31 +1,23 @@
-import {React, useState} from 'react';
+import {React} from 'react';
 import Box from '@mui/material/Box';
 import Grid from '@mui/material/Grid';
-import { Paper } from '@mui/material';
-import { styled } from '@mui/material/styles';
-import Produkte from './Produkte';
-import HealthBild from "./doctor-6701410_1280.jpg"
-import SecurityBild from "./fingerprint-2904774_1280.jpg"
-import MobilityBild from "./park-5528190_1280.jpg"
-import CultureBild from "./stage-1248769_1280.jpg"
-import WorkBild from "./student-849825_1280.jpg"
-import VitilityBild from "./sunset-4276841_1280.jpg"
-import WohnenBild from "./vw-beetle-405876_1280.jpg"
-import InfoBild from "./woman-3083379_1280.jpg"
+import Produkte from './Produkttemplate';
+import HealthBild from "./pictures/doctor-6701410_1280.jpg"
+import SecurityBild from "./pictures/fingerprint-2904774_1280.jpg"
+import MobilityBild from "./pictures/park-5528190_1280.jpg"
+import CultureBild from "./pictures/stage-1248769_1280.jpg"
+import WorkBild from "./pictures/student-849825_1280.jpg"
+import VitilityBild from "./pictures/sunset-4276841_1280.jpg"
+import WohnenBild from "./pictures/vw-beetle-405876_1280.jpg"
+import InfoBild from "./pictures/woman-3083379_1280.jpg"
 
 
 
 const Produktauswahl = () => {
 
-    const Item = styled(Paper)(({ theme }) => ({
-        backgroundColor: theme.palette.mode === 'dark' ? '#1A2027' : '#fff',
-        ...theme.typography.body2,
-        padding: theme.spacing(1),
-        textAlign: 'center',
-        justifyContent: "center",
-        alignItems: "center",
-        color: theme.palette.text.secondary,
-      }));
+    //Hier werden die 8 verschiedenen Überkategorien angezeigt 
+
+    //Klickt man auf eine der Kategorien, wird man auf eine der Produktauswahlseiten geleitet, die im gleichnamigen Ordner liegen
 
     return (
         <div>

@@ -5,7 +5,6 @@ import "dotenv/config";
 
 const uri = `mongodb+srv://${process.env.USER}:${process.env.PASSWORD}@integrationsseminar.btrdy.mongodb.net/Integrationsseminar?retryWrites=true&w=majority`;
 import Review from "./models/review.js";
-import Product from "./models/produkte.js";
 import ProduktModel from "./models/produkte2.js";
 
 const app = express();
@@ -47,24 +46,6 @@ app.post("/send_review", (req, res) => {
       console.log(err);
     });
   body.push(review);
-});
-
-app.post("/produkte", (req, res) => {
-  const produkt = new Product({
-    id: body.length + 1,
-    name: "Staubsauger 45 GTI",
-    kategorie: "Staubsauger",
-    uvp: 15,
-  });
-
-  produkt
-    .save()
-    .then((result) => {
-      res.send(result);
-    })
-    .catch((err) => {
-      console.log(err);
-    });
 });
 
 app.get("/get_produkte", async (req, res) => {

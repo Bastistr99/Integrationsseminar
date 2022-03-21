@@ -6,6 +6,11 @@ import Typography from '@mui/material/Typography';
 import { CardActionArea } from '@mui/material';
 
 const Produkte = ({bild, titel, beschreibung, id, preis, minHeight}) => {
+
+//Sowohl die Überkategorien, als auch die Produkte werden Mithilfe dieses Templates erstellt
+
+//Größe kann über minHeight variable mitgegeben werden
+
     return (
         <Card sx={{width: 500, minHeight: minHeight,  position: "relative" }}>
           <CardActionArea onClick={() => {
@@ -29,7 +34,7 @@ const Produkte = ({bild, titel, beschreibung, id, preis, minHeight}) => {
                {beschreibung}
               </Typography>
               <Typography variant="h4" color="text.secondary" fontWeight="500" >
-                {preis == undefined ? "" : preis + "€"}
+                {preis === undefined ? "" : preis + "€"}
                
               </Typography>
             </CardContent>

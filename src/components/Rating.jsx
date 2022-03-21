@@ -79,22 +79,22 @@ const altIcons = {
 const geschlechtIcons = {
   0: {
    icon: "",
-   label: ""
+   label: "Keine Auswahl getroffen"
   },
   1: {
-    icon: "Mann",
+    icon: <MaleIcon style={{fontSize: "70px", color: "darkblue", marginLeft: "1vh", marginRight: "1vh"}} />,
     label: <Typography variant="h6" sx={{ color: "darkblue" }} >Männlich</Typography>,
   },
   2: {
-    icon: "Frau",
+    icon: <FemaleIcon style={{fontSize: "70px", color: "pink", marginLeft: "1vh", marginRight: "1vh"}} />,
     label: <Typography variant="h6" sx={{ color: "pink" }}> Weiblich</Typography>,
   },
   3: {
-    icon: "Andere / Divers",
+    icon: <TransgenderIcon style={{fontSize: "70px", color: "darkgreen", marginLeft: "1vh", marginRight: "1vh"}} />,
     label: <Typography variant="h6" sx={{ color: "darkgreen" }}> Divers</Typography>,
   },
   4: {
-    icon: "Keine Angabe",
+    icon: <DoNotDisturbIcon style={{fontSize: "70px", color: "black", marginLeft: "1vh", marginRight: "1vh"}} />,
     label: <Typography variant="h6" sx={{ color: "black" }}> Keine Angabe</Typography>,
   }
 }
@@ -135,9 +135,10 @@ GeschlechtContainer.propTypes = {
 
 export default function BasicRating({ count, getResult, result }) {
 
+
+  //Zeigt die verschiedenen Antworten des Ratings an
+
   const [hover, setHover] = React.useState(-1);
-
-
   const handleChangeInput = (index, event) => {
     const values = [...result];
     values[index][event.target.name] = event.target.value;

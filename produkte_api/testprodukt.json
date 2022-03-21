@@ -1,7 +1,0 @@
-{
-    "$schema": "./produkte_schema.json",
-    "_id": 1,
-    "name": "Emporia SMART.3 mini",
-    "kategorie": "Mobiltelefon",
-    "uvp": 146.49
-}

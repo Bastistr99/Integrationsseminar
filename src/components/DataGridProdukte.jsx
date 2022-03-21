@@ -14,6 +14,8 @@ const columns = [
   )},
 ];
 
+// Holt sich die Produkte aus der Datenbank und rendert diese in einer Tabelle mit den durchschnittlichen Bewertungen 
+
 
 export default function DataGridProdukte() {
 

@@ -1,8 +1,13 @@
 import * as React from 'react';
 import Backdrop from '@mui/material/Backdrop';
-// import CircularProgress from '@mui/material/CircularProgress';
 import { Typography } from '@mui/material';
-import JsonObjekt from './Json_Objekt';
+import JsonObjekt from './Abschlussbutton';
+
+//Dieses Objekt wird am Ende des Fragebogens angezeigt
+
+//Nachdem der Nutzer auf den Button gedrückt hat, wird das JSON-Objekt (Abschlussbutton) ausgeführt und die Ergebnisse werden an die Datenbank geschickt
+
+
 
 export default function SimpleBackdrop({review, toggleHomescreen}) {
   const [open, setOpen] = React.useState(true);

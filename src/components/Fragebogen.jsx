@@ -5,6 +5,12 @@ import BasicRating from "./Rating";
 import FragebogenTemplate from "./fragenbogen_template.json";
 import { useParams } from "react-router-dom";
 
+//<Zeigt die Frage + die Ampelbewertung an 
+
+//Nachdem alle Fragen beantwortet wurden, wird der Abschlussbackdrop angezeigt 
+
+//Die Fragen werden hier über das JSON geladen 
+
 const Fragebogen = ({ count, getResults, results, setAntworten }) => {
 
   const [fragebogen, setFragebogen] = useState([])
@@ -16,7 +22,6 @@ const Fragebogen = ({ count, getResults, results, setAntworten }) => {
       frage.push(FragebogenTemplate[fragen].frage)
   }  
 
-  console.log(results)
 
   useEffect(()=> {
     if(count == 25) {

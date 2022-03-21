@@ -1,5 +1,4 @@
 import "./App.css";
-import ResponsiveAppBar from "../components/Navbar";
 import * as React from 'react';
 import Button from '@mui/material/Button';
 import Card from '@mui/material/Card';
@@ -12,16 +11,31 @@ import Typography from '@mui/material/Typography';
 import Container from '@mui/material/Container';
 import { createTheme, ThemeProvider } from '@mui/material/styles';
 
+import FragebogenIcon from "../components/pictures/fragebogen_icon.png"
+import ProduktVergleichIcon from "../components/pictures/produktvergleich_icon.png"
+import ProduktbewertungenIcon from "../components/pictures/produktbewertungen_icon.png"
+
+
 
 const cards = ["Fragebogen", "Produktvergleich", "Produktbewertungen"];
 
 const texte =["Bewerten Sie selbst Produkte!", "Vergleichen Sie die Bewertungen zweier Produkte!", "Schauen Sie sich zahlreiche Bewertungen von Produkten an!"];
 
-const icons = ["../../fragebogen_icon.png", "../../produktvergleich_icon.png", "../../produktbewertungen_icon.png"];
+const icons = [FragebogenIcon, ProduktVergleichIcon, ProduktbewertungenIcon];
 
 const links =["/fragebogen", "/produktvergleich", "/produktbewertungen"]
 
-const theme = createTheme();
+const theme = createTheme({
+  palette: {
+    primary: {
+      main: "#1ADAE1",
+    },
+    secondary: {
+      main: "#3F4657",
+      
+    },
+  },
+});
 
 
 function Home() {
@@ -61,7 +75,7 @@ function Home() {
 
                   </CardContent>
                   <CardActions>
-                    <Button size="big" href = {links[index]}> Besuchen</Button>
+                    <Button size="big" variant="contained" href = {links[index]}> Besuchen</Button>
                   </CardActions>
                 </Card>
               </Grid>
