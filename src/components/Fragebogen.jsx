@@ -16,8 +16,10 @@ const Fragebogen = ({ count, getResults, results, setAntworten }) => {
       frage.push(FragebogenTemplate[fragen].frage)
   }  
 
+  console.log(results)
+
   useEffect(()=> {
-    if(count == 24) {
+    if(count == 25) {
       results.map((antwort,i) => {
         let body = {
           frage: frage[i],
