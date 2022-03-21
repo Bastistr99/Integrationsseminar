@@ -13,7 +13,7 @@ export default function SimpleBackdrop({review, toggleHomescreen}) {
   return (
     <div>
       <Backdrop
-        sx={{ color: '#fff', zIndex: (theme) => theme.zIndex.drawer + 1 }}
+        sx={{ color: '#fff', zIndex: (theme) => theme.zIndex.drawer + 1, display: "flex", alignItems: "center", justifyContent: "center"}}
         open={open}
         onClick={handleClose}
       > <div>

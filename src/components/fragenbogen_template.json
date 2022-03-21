@@ -123,5 +123,10 @@
         "frage": "Würden Sie das Produkt nach ihrem aktuellen Kenntnisstand an Angehörige oder Anwender weiter empfehlen?",
         "erklaerung": "",
         "antwort": 0
+    },
+    "random_sonst_klappt_es_nicht": {
+        "frage": "Würden Sie noch einmal bei einer solchen Umfrage teilnehmen?",
+        "erklaerung": "",
+        "antwort": 0
     }
 }
