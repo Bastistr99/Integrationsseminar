@@ -9,6 +9,7 @@ Um dieses Produkt nutzen zu könnnen, müssen folgende Vorberitungen getroffen w
 ### Umgebungsvariablen
 
 Der Datenbanknutzer muss als Umgebungsvariable gesetzt werden. Auf einem Mac über export ...
+Dabei müssen die Variablen USER und PASSWORD gesetzt werden
 
 ### Starten der Applikation
 
