@@ -19,7 +19,12 @@ const Produktübersicht = (props) => {
         ...rest
         }));
 
-        setProdukte(manipulatedResult);
+        const singleResult = manipulatedResult.filter(
+            (manipulatedResult) => manipulatedResult.id == props.id
+        );
+
+        setProdukte(singleResult);
+
         setIsLoading(false);
         
     };
@@ -34,10 +39,11 @@ const Produktübersicht = (props) => {
             {!isLoading && (
                 <>
                     <div>
-                    <h1>{produkte[props.id].name}</h1>
-                    <img src={produkte[props.id].image} height="300"></img>
-                    <p>{produkte[props.id].beschreibung}</p>
+                    <h1>{produkte[0].name}</h1>
+                    <img src={produkte[0].image} height="300"></img>
+                    <p>{produkte[0].beschreibung}</p>
                     </div>
+
 
                     <div>
                         <DataGridBewertungen id={props.id}/>

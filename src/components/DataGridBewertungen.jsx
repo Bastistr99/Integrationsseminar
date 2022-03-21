@@ -24,6 +24,9 @@ export default function DataGridBewertungen(props) {
       (result) => result.id == props.id
     );
 
+    filtered_result[0].antwort.splice(1,2);
+    filtered_result[0].antwort.splice(22,1);
+
     const avg_result = [];
     let sum;
     
