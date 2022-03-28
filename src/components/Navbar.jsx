@@ -103,7 +103,7 @@ const ResponsiveAppBar = () => {
                 key={page}
                 onClick={handleCloseNavMenu}
                 sx={{ my: 2, color: 'white', display: 'block' }}
-                href={`http://localhost:3000/${page}`}
+                href={`${process.env.URL}:3000/${page}`}
               >
                 {page}
               </Button>

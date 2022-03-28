@@ -24,7 +24,7 @@ const QuestionButton = ({changeProgress, changeCount, neuer_counter, reviews, to
         ) : (
           <div style={{display: "flex", alignItems: "center", justifyContent: "center"}}>
           <SimpleBackdrop review={fragebogen_complete} toggleHomescreen={(res) => {toggleHomescreen(res)
-            changeCount(neuer_counter + 1); window.location.href = "http://localhost:3000/" } }>Zurück zur Website</SimpleBackdrop>
+            changeCount(neuer_counter + 1); window.location.href = `${process.env.URL}` } }>Zurück zur Website</SimpleBackdrop>
           </div>
         )}
         </div>

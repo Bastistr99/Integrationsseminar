@@ -20,7 +20,7 @@ export default function DataGridBewertungen(props) {
 
   //holt Produktbewertungen aus Datenbank
   async function ReviewDaten() {
-    const data = await fetch("http://localhost:3001/get_reviews");
+    const data = await fetch(`${process.env.URL}:3001/get_reviews`);
     const result = await data.json();
 
     //Filtert anhand der ID die Bewertungen des gefragten Produkts aus allen Bewertungen heraus

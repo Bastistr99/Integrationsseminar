@@ -20,7 +20,7 @@ const JsonObjekt = ({review, toggleHomescreen}) => {
       }),
     };
 
-    fetch("http://localhost:3001/send_review", requestOptions)
+    fetch(`${process.env.URL}:3001/send_review`, requestOptions)
       .then((res) => res.json())
       .then((data) => console.log(data));
   };
