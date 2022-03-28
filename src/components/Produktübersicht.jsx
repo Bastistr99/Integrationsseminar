@@ -10,6 +10,7 @@ const Produktübersicht = (props) => {
     const [isLoading, setIsLoading] = useState(true);
 
     async function ProduktDaten() {
+        //Holt alle Produkte
         const data = await fetch("http://localhost:3001/get_produkte");
         const result = await data.json();
 
@@ -21,6 +22,7 @@ const Produktübersicht = (props) => {
         ...rest
         }));
 
+        //Filtert gesuchtes Produkt anhand der ID heraus
         const singleResult = manipulatedResult.filter(
             (manipulatedResult) => manipulatedResult.id == props.id
         );

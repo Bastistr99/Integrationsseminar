@@ -3,6 +3,7 @@ import { DataGrid } from '@mui/x-data-grid';
 import Link from '@mui/material/Link';
 import { useState, useEffect } from 'react';
 
+//Spalten des DataGrids
 const columns = [
   { field: 'name', headerName: 'Name', width: 250 },
   { field: 'beschreibung', headerName: 'Beschreibung', width: 400 },
@@ -22,9 +23,11 @@ export default function DataGridProdukte() {
   const [produkte, setProdukte] = useState ([]);
 
   async function ProduktDaten() {
+    //Holt alle Produkte aus der Datenbank
     const data = await fetch("http://localhost:3001/get_produkte");
     const result = await data.json();
 
+    //DataGrid braucht das Attribut "id". deshalb Änderung von "_id" zu "id"
     const manipulatedResult = await result.map(({
       _id: id,
       ...rest
@@ -33,12 +36,11 @@ export default function DataGridProdukte() {
       ...rest
     }));
 
+    //Einfügen eines Attributs, das denk Link zur Produkteseite enthält
     const ResultWithLinks = await manipulatedResult.map(obj => ({
       ...obj,
       link: "/produkt/"+(obj.id)
     }));
-
-    console.log(ResultWithLinks);
 
     setProdukte(ResultWithLinks);
   };
