@@ -11,7 +11,7 @@ const Produktübersicht = (props) => {
 
     async function ProduktDaten() {
         //Holt alle Produkte
-        const data = await fetch("http://localhost:3001/get_produkte");
+        const data = await fetch(`${process.env.URL}:3001/get_produkte`);
         const result = await data.json();
 
         const manipulatedResult = await result.map(({
